@@ -30,7 +30,7 @@ header {
 }
 
 section {
-  padding: 1.5em 4em;
+  padding: 2em 4em;
   font-family: Coves;
   font-size: 1.125em;
 }
@@ -144,8 +144,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2em;
-  padding: 0 6em;
+  margin-bottom: 5em;
+  padding: 0 9em;
 }
 .event-image-wrapper,
 .event-info {
