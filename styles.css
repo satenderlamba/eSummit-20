@@ -30,9 +30,10 @@ header {
 }
 
 section {
-  padding: 2em 4em;
+  padding: 20px 80px;
   font-family: Coves;
   font-size: 1.125em;
+  min-height: 100vh;
 }
 
 img {
@@ -81,8 +82,6 @@ img {
 .brand-logo-name {
   margin-left: 1rem;
   font-size: 2.5rem;
-  color: #e68625;
-  font-family: Litsans;
 }
 
 .brand-logo img {
@@ -117,29 +116,99 @@ img {
   max-height: 1080px;
   align-items: center;
   justify-content: space-between;
+  font-size: 1.5em;
 }
 
-.intro-image {
-  overflow: hidden;
-  max-width: 400px;
-  max-height: 400px;
-  flex: 0 1 50%;
+.intro-image-wrapper {
+  background: url(https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  height: 100%;
+  flex: 0 1 40%;
+}
+
+.intro-text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-text {
+  font-size: 3.5em;
+  font-weight: bolder;
+  font-family: Litsans;
+  margin: 0;
+}
+
+.intro-sub-text {
+  margin: 0.5em 0 0 0;
+  font-size: 1.5em;
+}
+
+.intro-para {
+  margin: 1em 0 0 0;
+}
+
+.scroll-link {
+  color: inherit;
+  text-decoration: none;
+  margin-top: 3em;
+  border-bottom: 1.5px solid #e8446a;
+  padding-bottom: 1em;
+}
+
+.stroke-text {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
 }
 
 /* About us styles */
 
+.about-us-wrapper {
+  display: flex;
+  margin-top: 2em;
+}
 .about-us {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  color: black;
+  background-color: #f2f2f2;
 }
 .image-wrapper,
-.our-info {
+.our-info-wrapper {
   flex: 0 1 50%;
+}
+.our-info-wrapper h1 {
+  font-size: 2em;
+}
+.image-wrapper {
+  background: url(https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  padding: 3em 1em 1.5em;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.our-info-wrapper {
+  padding: 0 4em;
+}
+.timer-wrapper {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 3em;
 }
 
 /* Events styles */
 
+.events-title {
+  font-family: Litsans;
+  font-size: 2em;
+  margin: 1em 0 2em;
+}
+
+.events-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .event-card {
   display: flex;
   align-items: center;
@@ -150,4 +219,24 @@ img {
 .event-image-wrapper,
 .event-info {
   flex: 0 1 50%;
+}
+
+.event-image {
+  max-width: 25vw;
+}
+
+.register-button {
+  color: black;
+  background: #e68625;
+  border: 1.2px solid #e68625;
+  padding: 0.5em 1em;
+  font-family: Litsans;
+  font-size: 0.9em;
+}
+
+.register-button:hover {
+  cursor: pointer;
+  background: #0e0e11;
+  border: 1.2px solid #e68625;
+  color: white;
 }
