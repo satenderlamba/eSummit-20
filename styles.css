@@ -240,3 +240,43 @@ img {
   border: 1.2px solid #e68625;
   color: white;
 }
+
+/* Speaker section styles  */
+
+::selection {
+  background: grey;
+  color: whitesmoke;
+}
+.speakercard {
+  width: 250px;
+  height: 285px;
+  background-image: url(https://www.icmif.org/sites/default/files/styles/inline_left/public/Ross%20Dawson%20news.jpg?itok=b_xYKzNZ);
+  color: blue;
+  margin: 20px;
+  padding: 0%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  transition: 1s;
+  filter: blur(0.5px);
+}
+.speakercard:hover {
+  filter: none;
+  box-shadow: 0 2px 4px 0 orange;
+}
+.speakerinfo {
+  margin: 0%;
+  padding: 0%;
+  width: 300px;
+  height: 20px;
+  transform: translateY(120px);
+  filter: none;
+  background-color: red;
+}
+.speaker {
+  width: 600px;
+  justify-content: center;
+}
+.speakercont {
+  widows: 100%;
+  background-color: black;
+}
