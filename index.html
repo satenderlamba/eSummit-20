@@ -15,8 +15,8 @@
       </a>
       <nav class="main-nav">
         <ul>
-          <li><a href="#">EVENTS</a></li>
-          <li><a href="#">SPEAKERS</a></li>
+          <li><a href="#event">EVENTS</a></li>
+          <li><a href="#speaker">SPEAKERS</a></li>
           <li>
             <a href="#" class="accent-link">CONTACT</a>
           </li>
@@ -32,36 +32,13 @@
           <a href="#" class="scroll-link">Explore </a>
         </div>
         <div class="intro-image-wrapper">
-          <p style="opacity: 0;">
-            sdkgsgdfgk jhdsgfvhjdsgghjdgd Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Mollitia asperiores odio dolore
-            doloribus et voluptatum vel deserunt debitis deleniti, hic beatae
-            assumenda quisquam numquam ipsam, saepe sint iste natus esse?Lorem
-            ipsum, dolor sit amet consectetur adipisicing elit. Ipsum dolor
-            impedit natus illum, dolores nostrum quasi incidunt esse harum
-            laudantium et expedita fuga necessitatibus aperiam ea
-            exercitationem. Excepturi, aspernatur quae. tatum vel deserunt
-            debitis deleniti, hic beatae assumenda quisquam numquam ipsam, saepe
-            sint iste natus esse?Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Ipsum dolor impedit natus illum, dolores nostrum
-            quasi incidunt esse harum laudantium et expedita fuga necessitatibus
-            aperiam ea exercitationem. Excepturi, aspernatur quae.
-          </p>
+         <img src="https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="intro-image">
         </div>
       </section>
       <section class="about-us">
         <div class="about-us-wrapper">
           <div class="image-wrapper">
-            <p style="opacity: 0;">
-              sdkgsgdfgk jhdsgfvhjdsgghjdgd Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Mollitia asperiores odio dolore
-              doloribus et voluptatum vel deserunt debitis deleniti, hic beatae
-              assumenda quisquam numquam ipsam, saepe sint iste natus esse?Lorem
-              ipsum, dolor sit amet consectetur adipisicing elit. Ipsum dolor
-              impedit natus illum, dolores nostrum quasi incidunt esse harum
-              laudantium et expedita fuga necessitatibus aperiam ea
-              exercitationem. Excepturi, aspernatur quae.
-            </p>
+           
           </div>
           <div class="our-info-wrapper">
             <h1 class="accent-text">What is ESummit?</h1>
@@ -80,7 +57,7 @@
           <h1 class="event-timer">00 Days 00 Hours 00 Seconds</h1>
         </div>
       </section>
-      <section class="events-section">
+      <section class="events-section" id="event">
         <h1 class="events-title accent-text">
           <span class="stroke-text-white">EXPLORE </span>EVENTS
         </h1>
@@ -253,7 +230,7 @@
           </div>
         </div>
       </section>
-      <section class="speakers-section">
+      <section class="speakers-section" id="speaker">
         <h1 class="speaker-title">
           <span class="stroke-text-black">Past</span> Speakers
         </h1>
@@ -304,7 +281,53 @@
             <p class="speaker-info line-2">Paypal</p>
           </div>
       </section>
-      <section class="team-section"></section>
+      <section class="team-section">
+        <h1 class="team-title">
+          <span class="stroke-text-white">Meet the</span> Team
+        </h1>
+        <div class="team-card-wrapper">
+          <div class="team-card team-1">
+            <h3 class="team-name">Yugansh Chokra</h3>
+            <p class="team-info">President</p> 
+          </div>
+          <div class="team-card team-1">
+            <h3 class="team-name">Jane Doe</h3>
+            <p class="team-info">Vice-President</p>
+          </div>
+          <div class="team-card team-1">
+            <h3 class="team-name">Jane Doe</h3>
+            <p class="team-info">Counsillor</p>
+          </div>
+        </div>
+      </section>
     </main>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
   </body>
 </html>
