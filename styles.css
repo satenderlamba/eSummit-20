@@ -21,13 +21,13 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: Coves;
   color: white;
   min-height: 100vh;
   align-items: center;
   max-width: none;
 }
+
 main {
   margin: 0 auto;
   overflow-x: hidden;
@@ -257,10 +257,30 @@ img {
 .our-info-wrapper {
   padding: 0 4em;
 }
-.timer-wrapper {
+
+/* Timer styles */
+.timer-container {
+  color: #333;
   text-align: center;
+}
+
+#head {
+  font-weight: normal;
+  font-family: Litsans;
+  color: #e68625;
+}
+
+li {
+  display: inline-block;
   font-size: 1.5em;
-  margin-top: 3em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
 }
 
 /* Events styles */

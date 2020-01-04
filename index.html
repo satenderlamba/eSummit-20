@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    
     <header class="main-header">
       <a href="../index.html" class="brand-logo">
         <img src="../assets/Ecell-LOGO-01.png" />
@@ -52,9 +53,14 @@
             </p>
           </div>
         </div>
-        <div class="timer-wrapper">
-          <h1 class="accent-text">Time to event:</h1>
-          <h1 class="event-timer">00 Days 00 Hours 00 Seconds</h1>
+        <div class="timer-container">
+          <h1 id="head">Countdown to Event: </h1>
+          <ul>
+            <li><span id="days"></span>days</li>
+            <li><span id="hours"></span>Hours</li>
+            <li><span id="minutes"></span>Minutes</li>
+            <li><span id="seconds"></span>Seconds</li>
+          </ul>
         </div>
       </section>
       <section class="events-section" id="event">
@@ -298,8 +304,8 @@
             <h3 class="team-name">Jane Doe</h3>
             <p class="team-info">Counsillor</p>
           </div>
-        </div>
       </section>
+    </div>
     </main>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -329,5 +335,29 @@ $(document).ready(function(){
   });
 });
 </script>
+<script>
+const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+let countDown = new Date('Feb 06, 2020 00:00:00').getTime(),
+    x = setInterval(function() {
+
+      let now = new Date().getTime(),
+          distance = countDown - now;
+
+      document.getElementById('days').innerText = Math.floor(distance / (day)),
+        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+      
+      //do something later when date is reached
+      //if (distance < 0) {
+      //  clearInterval(x);
+      //  'IT'S MY BIRTHDAY!;
+      //}
+
+    }, second)</script>
   </body>
 </html>
