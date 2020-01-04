@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Event 1</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <style>
+    main {
+      display: flex;
+      flex-direction: column;
+      padding: 0 10em;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1,
+    h2 {
+      font-family: Litsans;
+      color: #e68625;
+    }
+    .btn {
+      color: white;
+      background-color: #1762a7;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 1.2rem;
+    }
+
+    .btn:hover {
+      background-color: #2180d8;
+    }
+
+    .btn:focus {
+      background-color: #2796ff;
+    }
+
+    .login-form {
+      background-color: #232323;
+      width: 50vw;
+      max-width: 50%;
+      padding: 2rem 4rem;
+      border-radius: 20px;
+    }
+
+    .email {
+      margin-top: 1em;
+    }
+
+    .input-group {
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .input-group-last {
+      margin-bottom: 0;
+    }
+
+    .input-group label {
+      margin-bottom: 0.5rem;
+    }
+
+    .input-group input {
+      outline: none;
+      background: none;
+      border: 1px solid #2e3852;
+      font-size: 1em;
+      padding: 0.5em;
+      color: inherit;
+      border-radius: 5px;
+    }
+
+    .input-group input:focus {
+      border-color: #e68625;
+    }
+
+    @media (max-width: 800px) {
+      main {
+        padding: 1em;
+      }
+      .login-form {
+        padding: 2em 2.5em;
+        width: 80vw;
+        max-width: 90%;
+      }
+    }
+  </style>
+  <body style="background-color: #0e0e11;">
+    <main>
+      <h1 class="event-title">Event Title</h1>
+      <p class="event-description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
+        eos eveniet atque eligendi maxime vitae, dicta vel quae? Recusandae
+        tempora suscipit sed enim eum rem necessitatibus in quaerat doloribus
+        praesentium.
+      </p>
+      <h2 class="register-title">Register now!</h2>
+      <form class="login-form">
+        <div class="input-group email">
+          <label>Name</label>
+          <input type="text" />
+        </div>
+        <div class="input-group">
+          <label>College Name</label>
+          <input type="text" />
+        </div>
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" />
+        </div>
+        <div class="input-group">
+          <label>Phone</label>
+          <input type="number" />
+        </div>
+        <div class="input-group">
+          <label>No. of team members</label>
+          <input type="text" />
+        </div>
+        <div class="input-group">
+          <label>About</label>
+          <input type="text" />
+        </div>
+        <div class="input-group">
+          <button type="submit" class="btn">Register</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
