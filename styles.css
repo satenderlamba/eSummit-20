@@ -102,10 +102,6 @@ img {
   margin-left: 1.5em;
 }
 
-.main-nav li :last-of-type {
-  margin-right: 1.5em;
-}
-
 .accent-link {
   border: 1.4px solid #e68625;
   padding-left: 2em !important;
@@ -147,13 +143,16 @@ img {
 }
 
 .intro-image-wrapper {
-  flex-basis: 40%;
+  background: url(https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  width: 500px;
+  height: 700px;
+  /* flex-basis: 40%; */
 }
 
 .intro-text-wrapper {
   display: flex;
   flex-direction: column;
-  flex-basis: 60%;
+  /* flex-basis: 60%; */
   margin-right: 1em;
 }
 
@@ -251,7 +250,7 @@ img {
   padding: 3em 1em 1.5em;
   background-blend-mode: multiply;
   background-size: cover;
-  max-width: 600px;
+  max-width: 300px;
 }
 
 .our-info-wrapper {
@@ -285,6 +284,12 @@ li span {
 
 /* Events styles */
 
+.event-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 .events-title {
   font-family: Litsans;
   font-size: 2.5em;
@@ -334,9 +339,12 @@ li span {
 .event-info {
   flex: 0 1 50%;
 }
+.event-info {
+  margin: 0 1.3em;
+}
 
 .event-image {
-  max-width: 25vw;
+  max-width: 30vw;
 }
 
 .register-button {
@@ -549,6 +557,7 @@ li span {
 .team-card-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .team-card {
   width: 250px;
@@ -561,7 +570,7 @@ li span {
   background-image: url(https://www.icmif.org/sites/default/files/styles/inline_left/public/Ross%20Dawson%20news.jpg?itok=b_xYKzNZ);
   color: #e68625;
   background-blend-mode: multiply;
-  flex: 0 1 33%;
+
   margin: 1em;
   background-size: cover;
 
@@ -614,9 +623,76 @@ li span {
 }
 
 /* media queries */
+
 @media only screen and (max-width: 641px) {
-  main {
-    margin: 0 0;
-    width: 100%;
+  section {
+    padding: 10px 20px;
+  }
+
+  /* Intro section styles */
+
+  .intro-section {
+    flex-direction: column;
+  }
+
+  .intro-text-wrapper {
+    margin-bottom: 1em;
+  }
+
+  .intro-text {
+    font-size: 2em;
+    -ms-flex-order: 2;
+  }
+
+  .intro-image-wrapper {
+    -ms-flex-order: 1;
+    height: 250px;
+    width: 400px;
+  }
+
+  /* About us styles */
+  .about-us-wrapper {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .image-wrapper {
+    order: 2;
+  }
+  .our-info-wrapper {
+    order: 1;
+  }
+
+  /* Event styles */
+
+  .event-card {
+    padding: 0 0.5em;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .event-info {
+    order: 2;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .event-title {
+    font-size: 1.2em;
+  }
+  .event-desc {
+    display: none;
+  }
+
+  /* Association styles  */
+
+  .asso-card-wrapper {
+    padding: 0 1em;
+  }
+  .asso-card {
+  }
+
+  .team-card-wrapper {
+    flex-direction: column;
   }
 }
