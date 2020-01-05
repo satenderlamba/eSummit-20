@@ -6,6 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Esummit '20</title>
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/owl.css">
+    <style>
+      .team {
+      margin: 80px 0;
+      padding-bottom: 10px;
+      background: white;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.07);
+      margin-right: 15px;
+      cursor: all-scroll;
+      }
+      .team .cover .overlay {
+      height: 250px;
+      padding-top: 60px;
+      opacity: 0;
+      background: rgba(0, 168, 255, 0.9);
+      -webkit-transition: opacity 0.45s ease;
+      transition: opacity 0.45s ease;
+      }
+      .team:hover .cover .overlay {
+      opacity: 1;
+      }
+      .team .avatar {
+      position: relative;
+      z-index: 2;
+      margin-top: -60px;
+      border-radius: 50%;
+      width: 140px;
+      }
+      .team .title {
+      margin: 50px 0;
+      }
+      .container1 {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      }
+      @media (min-width: 768px) {
+      .container1 {
+      width: 750px;
+      }
+      }
+      @media (min-width: 992px) {
+      .container1 {
+      width: 970px;
+      }
+      }
+      @media (min-width: 1200px) {
+      .container1 {
+      width: 1170px;
+      }
+      }
+      .team img {
+        display: inline;
+      }
+      .team h4, h5 {
+        color: #333;
+        margin: 10px;
+      }
+      .team h4 {
+        font-size: 1.5rem;
+      }
+      .team h5 {
+        font-size: 1.3rem;
+      }
+    </style>
   </head>
   <body>
     
@@ -313,23 +380,122 @@
           
         </div>
       </section>
-      <section class="team-section">
-        <h1 class="team-title">
-          <span class="stroke-text-black">Meet the</span> Team
+      <section class="section gray-bg" id="team" style="padding: 40px 0;">
+        <h1 class="speaker-title" style="text-align: center;">
+          <span class="stroke-text-black">Our</span> Team
         </h1>
-        <div class="team-card-wrapper">
-          <div class="team-card team-1">
-            <h3 class="team-name">Yugansh Chokra</h3>
-            <p class="team-info">President</p> 
+        <div class="container1">
+          <div class="owl-carousel owl-theme" style="padding-right:0px;padding-left:0px;">
+            <div class="item" style="width: 100%;">
+              <div class="team text-center" style="text-align: center;">
+                <div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;"></div><img class="avatar" src="img/team/1.jpg" alt="Team Image">
+                <div class="title">
+                  <h4>Karan Jain</h4>
+                  <h5 class="muted regular"><b>Cheif Convener</b></h5><a href="https://www.linkedin.com/in/karan-jain-0442b1150/"><i class="fa fa-linkedin fa-2x" target="_blank"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="item" style="width: 100%;">
+              <div class="team text-center" style="text-align: center;">
+                <div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;"></div><img class="avatar" src="img/team/2.jpg" alt="Team Image">
+                <div class="title">
+                  <h4>Aayush Yadav</h4>
+                  <h5 class="muted regular"><b>Co-Convener</b></h5><a href="https://www.linkedin.com/in/aayush-yadav-28003b169/"><i class="fa fa-linkedin fa-2x" target="_blank"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="item" style="width: 100%;">
+              <div class="team text-center" style="text-align: center;">
+                <div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;"></div><img class="avatar" src="img/team/3.jpg" alt="Team Image">
+                <div class="title">
+                  <h4>Amartya Palash</h4>
+                  <h5 class="muted regular"><b>Co-Convener</b></h5><a href="https://www.linkedin.com/in/amartya1609/"><i class="fa fa-linkedin fa-2x" target="_blank"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="item" style="width: 100%;">
+              <div class="team text-center" style="text-align: center;">
+                <div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;"></div><img class="avatar" src="img/team/4.jpg" alt="Team Image">
+                <div class="title">
+                  <h4>Jahanavi Mishra</h4>
+                  <h5 class="muted regular"><b>Director of Operations</b></h5><a href="https://www.linkedin.com/in/jahanavim/"><i class="fa fa-linkedin fa-2x" target="_blank"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="item" style="width: 100%;">
+              <div class="team text-center" style="text-align: center;">
+                <div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;"></div><img class="avatar" src="img/team/5.jpg" alt="Team Image">
+                <div class="title">
+                  <h4>Ekas Luthra</h4>
+                  <h5 class="muted regular"><b>General Secretary</b></h5><a href="https://www.linkedin.com/in/ekas-luthra-7b3443150/"><i class="fa fa-linkedin fa-2x" target="_blank"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="item" style="width: 100%;">
+              <div class="team text-center" style="text-align: center;">
+                <div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;"></div><img class="avatar" src="img/team/6.jpg" alt="Team Image">
+                <div class="title">
+                  <h4>Lovely Chopra</h4>
+                  <h5 class="muted regular"><b>Secretary</b></h5><a href="https://www.linkedin.com/in/lovely-chopra-91b722151/"><i class="fa fa-linkedin fa-2x" target="_blank"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="item" style="width: 100%;">
+              <div class="team text-center" style="text-align: center;">
+                <div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;"></div><img class="avatar" src="img/team/7.jpg" alt="Team Image">
+                <div class="title">
+                  <h4>Achin Verma</h4>
+                  <h5 class="muted regular"><b>Sponsorship Head</b></h5><a href="https://www.linkedin.com/in/achin-verma-069a82134/"><i class="fa fa-linkedin fa-2x" target="_blank"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="item" style="width: 100%;">
+              <div class="team text-center" style="text-align: center;">
+                <div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;"></div><img class="avatar" src="img/team/8.jpg" alt="Team Image">
+                <div class="title">
+                  <h4>Vansh</h4>
+                  <h5 class="muted regular"><b>PR Head</b></h5><a href="https://www.linkedin.com/in/vansh-batra-a5a193190/"><i class="fa fa-linkedin fa-2x" target="_blank"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="item" style="width: 100%;">
+              <div class="team text-center" style="text-align: center;">
+                <div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;"></div><img class="avatar" src="img/team/9.jpg" alt="Team Image">
+                <div class="title">
+                  <h4>Nimisha Jain</h4>
+                  <h5 class="muted regular"><b>Marketing Head</b></h5><a href="https://www.linkedin.com/in/nimisha-jain-bb81b3160/"><i class="fa fa-linkedin fa-2x" target="_blank"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="item" style="width: 100%;">
+              <div class="team text-center" style="text-align: center;">
+                <div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;"></div><img class="avatar" src="img/team/10.jpg" alt="Team Image">
+                <div class="title">
+                  <h4>Abhinav Kumar</h4>
+                  <h5 class="muted regular"><b>Treasurer</b></h5><a href="https://www.linkedin.com/in/abhinav-kumar-b72b49145/"><i class="fa fa-linkedin fa-2x" target="_blank"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="item" style="width: 100%;">
+              <div class="team text-center" style="text-align: center;">
+                <div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;"></div><img class="avatar" src="img/team/11.jpg" alt="Team Image">
+                <div class="title">
+                  <h4>Chaitanya</h4>
+                  <h5 class="muted regular"><b>Director of Tech</b></h5><a href="https://www.linkedin.com/in/arorachaitanya/"><i class="fa fa-linkedin fa-2x" target="_blank"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="item" style="width: 100%;">
+              <div class="team text-center" style="text-align: center;">
+                <div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;"></div><img class="avatar" src="img/team/12.jpg" alt="Team Image">
+                <div class="title">
+                  <h4>Arjun</h4>
+                  <h5 class="muted regular"><b>Director of Tech</b></h5><a href="https://www.linkedin.com/in/arjun-singh-b18b54150/"><i class="fa fa-linkedin fa-2x" target="_blank"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="team-card team-1">
-            <h3 class="team-name">Jane Doe</h3>
-            <p class="team-info">Vice-President</p>
-          </div>
-          <div class="team-card team-1">
-            <h3 class="team-name">Jane Doe</h3>
-            <p class="team-info">Counsillor</p>
-          </div>
+        </div>
       </section>
       <footer class="footer-section">
         <h1>hello</h1>
@@ -337,6 +503,34 @@
     </main>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+      loop: false,
+      margin: 10,
+      navigation: true,
+      autoPlay: false,
+      items:4,
+      navigationText: [
+      "<i class='fa fa-chevron-left'></i>",
+      "<i class='fa fa-chevron-right'></i>"
+      ],
+      autoplayTimeout: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+      0: {
+      items: 1
+      },
+      600: {
+      items: 3
+      },
+      1000: {
+      items: 4
+      }
+      }
+      });
+    </script>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
