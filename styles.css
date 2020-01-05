@@ -669,6 +669,8 @@ li span {
     padding: 0 0.5em;
     flex-direction: column;
     justify-content: center;
+    width: 33vw;
+    height: 25vh;
   }
 
   .event-info {
@@ -683,6 +685,73 @@ li span {
   .event-desc {
     display: none;
   }
+  .event-image
+  {
+    filter: invert();
+  }
+  .bellwether
+  {
+    content: url(img/logos/bellwether.png);
+  }
+  .informalevents
+  {
+    content: url(img/logos/informalevents.png);
+  }
+  .instaseed
+  {
+    content: url(img/logos/instaseed.png);
+  }
+  .mockstonks
+  {
+    content: url(img/logos/mockstonks.png);
+  }
+  .paneldiscussion
+  {
+    content: url(img/logos/paneldiscussion.png);
+  }
+  .speakersession
+  {
+    content: url(img/logos/speakersession.png);
+  }
+  .startupcombat
+  {
+    content: url(img/logos/startupcombat.png);
+  }
+  .unravel
+  {
+    content: url(img/logos/unravel.png);
+  }
+
+/* Speaker section styles  */
+
+::selection {
+  background: grey;
+  color: whitesmoke;
+}
+
+.speakers-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.speakercard {
+  width: 33vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #444141d3;
+  background-size: cover;
+  background-image: url(https://www.icmif.org/sites/default/files/styles/inline_left/public/Ross%20Dawson%20news.jpg?itok=b_xYKzNZ);
+  color: #e68625;
+  background-blend-mode: multiply;
+  margin: 1.2em;
+  background-size: cover;
+  transition: 0.2s transform ease-in-out;
+}
+
+
 
   /* Association styles  */
 
