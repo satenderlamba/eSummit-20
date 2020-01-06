@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Coves";
-  src: url("./assets/Coves-Light.ttf") format("ttf");
+  src: url("./assets/Coves-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Litsans";
-  src: url("./assets/LitSans-Medium.ttf") format("ttf");
+  src: url("./assets/LitSans-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -57,7 +57,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 120px;
   padding: 0 40px;
   background-color: #0e0e11;
 }
@@ -127,17 +127,17 @@ img {
   justify-content: space-between;
   font-size: 1.5em;
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
   padding-top: 0;
   padding-bottom: 3em;
 }
 .intro-section::after {
   content: "";
   position: absolute;
-  bottom: -200px;
+  bottom: -120px;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 120px;
   background: #0e0e11;
   clip-path: polygon(100% 0, 0 0, 100% 100%);
 }
@@ -214,26 +214,26 @@ img {
   color: black;
   background-color: #f2f2f2;
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
 }
 
 .about-us::before {
   content: "";
   position: absolute;
-  top: -200px;
+  top: -120px;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 120px;
   background: #f2f2f2;
   clip-path: polygon(100% 100%, 0 0, 0 100%);
 }
 .about-us::after {
   content: "";
   position: absolute;
-  bottom: -200px;
+  bottom: -120px;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 120px;
   background: #f2f2f2;
   clip-path: polygon(0 0, 0 100%, 100% 0);
 }
@@ -262,6 +262,10 @@ img {
   color: #333;
   text-align: center;
   margin-top: 2em;
+}
+.timer {
+  margin: 0 auto;
+  padding: 0;
 }
 
 #head {
@@ -302,17 +306,17 @@ li span {
   align-items: center;
   background-color: #0e0e11;
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
   border: none;
 }
 
 .events-section::before {
   content: "";
   position: absolute;
-  top: -200px;
+  top: -120px;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 120px;
   background: #0e0e11;
   clip-path: polygon(0 100%, 100% 100%, 100% 0);
 }
@@ -320,10 +324,10 @@ li span {
 .events-section::after {
   content: "";
   position: absolute;
-  bottom: -200px;
+  bottom: -120px;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 120px;
   background: #0e0e11;
   clip-path: polygon(100% 0, 0 0, 100% 100%);
   border: none;
@@ -383,16 +387,16 @@ li span {
   background-color: #f2f2f2;
   align-items: center;
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
 }
 
 .speakers-section::before {
   content: "";
   position: absolute;
-  top: -200px;
+  top: -120px;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 120px;
   background: #f2f2f2;
   clip-path: polygon(0 0, 0 100%, 100% 100%);
 }
@@ -400,10 +404,10 @@ li span {
 .speakers-section::after {
   content: "";
   position: absolute;
-  bottom: -200px;
+  bottom: -120px;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 120px;
   background: #f2f2f2;
   clip-path: polygon(100% 0, 0 0, 0 100%);
 }
@@ -459,16 +463,16 @@ li span {
   align-items: center;
   position: relative;
   margin: 0 auto;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
 }
 
 .associations-section::before {
   content: "";
   position: absolute;
-  top: -200px;
+  top: -120px;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 120px;
   background: #0e0e11;
   clip-path: polygon(0 100%, 100% 100%, 100% 0);
 }
@@ -476,10 +480,10 @@ li span {
 .associations-section::after {
   content: "";
   position: absolute;
-  bottom: -200px;
+  bottom: -120px;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 120px;
   background: #0e0e11;
   clip-path: polygon(100% 0, 0 0, 100% 100%);
   border: none;
@@ -506,6 +510,8 @@ li span {
   background-image: url(https://www.icmif.org/sites/default/files/styles/inline_left/public/Ross%20Dawson%20news.jpg?itok=b_xYKzNZ);
   background-size: cover;
   margin: 1em;
+  border-radius: 50%;
+
   transition: 0.2s transform ease-in-out;
 }
 
@@ -522,16 +528,16 @@ li span {
   background-color: #f2f2f2;
   align-items: center;
   position: relative;
-  margin-bottom: 150px;
+  margin-bottom: 90px;
 }
 
 .team-section::before {
   content: "";
   position: absolute;
-  top: -200px;
+  top: -120px;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 120px;
   background: #f2f2f2;
   clip-path: polygon(0 0, 0 100%, 100% 100%);
 }
@@ -539,10 +545,10 @@ li span {
 .team-section::after {
   content: "";
   position: absolute;
-  bottom: -150px;
+  bottom: -90px;
   left: 0;
   width: 100%;
-  height: 150px;
+  height: 90px;
   background: #f2f2f2;
   clip-path: polygon(100% 0, 0 0, 50% 100%);
 }
@@ -591,6 +597,8 @@ li span {
   font-size: 1.1em;
 }
 
+/* -------Footer styles----------- */
+
 .footer-section {
   display: flex;
   align-items: center;
@@ -598,15 +606,16 @@ li span {
   background-color: #0e0e11;
   align-items: center;
   position: relative;
+  padding-top: 3em;
 }
 
 .footer-section::before {
   content: "";
   position: absolute;
-  top: -150px;
+  top: -90px;
   left: 0;
   width: 100%;
-  height: 150px;
+  height: 90px;
   background: #0e0e11;
   clip-path: polygon(100% 0, 100% 100%, 50% 100%);
 }
@@ -614,12 +623,30 @@ li span {
 .footer-section::after {
   content: "";
   position: absolute;
-  top: -150px;
+  top: -90px;
   left: 0;
   width: 100%;
-  height: 150px;
+  height: 90px;
   background: #0e0e11;
   clip-path: polygon(0 0, 0 100%, 50% 100%);
+}
+
+/* Contact section */
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0e0e11;
+  align-items: center;
+
+  margin: 0 auto;
+}
+
+.facebook-icon {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 10px;
 }
 
 /* media queries */
@@ -627,6 +654,56 @@ li span {
 @media only screen and (max-width: 641px) {
   section {
     padding: 10px 20px;
+  }
+
+  .about-us::before,
+  .about-us::after,
+  .events-section::before,
+  .events-section::after,
+  .speakers-section::before,
+  .speakers-section::after,
+  .associations-section::before,
+  .associations-section::after,
+  .team-section::before,
+  .intro-section::after {
+    height: 70px;
+  }
+  .about-us::before,
+  .events-section::before,
+  .speakers-section::before,
+  .associations-section::before,
+  .team-section::before {
+    top: -70px;
+  }
+
+  .about-us::after,
+  .events-section::after,
+  .speakers-section::after,
+  .associations-section::after,
+  .intro-section::after {
+    bottom: -70px;
+  }
+
+  .about-us,
+  .events-section,
+  .speakers-section,
+  .associations-section,
+  .intro-section {
+    margin-bottom: 70px;
+  }
+
+  .team-section {
+    margin-bottom: 50px;
+  }
+  .team-section::after {
+    bottom: -50px;
+    height: 50px;
+  }
+
+  .footer-section::before,
+  .footer-section::after {
+    height: 50px;
+    top: -50px;
   }
 
   /* Intro section styles */
@@ -658,6 +735,9 @@ li span {
 
   .image-wrapper {
     order: 2;
+    margin: 0 auto;
+    min-width: 300px;
+    min-height: 250px;
   }
   .our-info-wrapper {
     order: 1;
@@ -687,77 +767,64 @@ li span {
   .event-desc {
     display: none;
   }
-  .event-image
-  {
+  .event-image {
     filter: invert();
-    
   }
-  .bellwether
-  {
+  .bellwether {
     content: url(img/logos/bellwether.png);
   }
-  .informalevents
-  {
+  .informalevents {
     content: url(img/logos/informalevents.png);
   }
-  .instaseed
-  {
+  .instaseed {
     content: url(img/logos/instaseed.png);
   }
-  .mockstonks
-  {
+  .mockstonks {
     content: url(img/logos/mockstonks.png);
   }
-  .paneldiscussion
-  {
+  .paneldiscussion {
     content: url(img/logos/paneldiscussion.png);
   }
-  .speakersession
-  {
+  .speakersession {
     content: url(img/logos/speakersession.png);
   }
-  .startupcombat
-  {
+  .startupcombat {
     content: url(img/logos/startupcombat.png);
   }
-  .unravel
-  {
+  .unravel {
     content: url(img/logos/unravel.png);
   }
 
-/* Speaker section styles  */
+  /* Speaker section styles  */
 
-::selection {
-  background: grey;
-  color: whitesmoke;
-}
+  ::selection {
+    background: grey;
+    color: whitesmoke;
+  }
 
-.speakers-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 120vw;
-}
-.speakercard {
-  width: 40vw;
-  height: 35vh;
-  display: inline-flexbox;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #444141d3;
-  background-size: cover;
-  background-image: url(https://www.icmif.org/sites/default/files/styles/inline_left/public/Ross%20Dawson%20news.jpg?itok=b_xYKzNZ);
-  color: #e68625;
-  background-blend-mode: multiply;
-  margin: 12px;
-  background-size: cover;
-  transition: 0.2s transform ease-in-out;
-  
-}
-
-
+  .speakers-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 120vw;
+  }
+  .speakercard {
+    width: 40vw;
+    height: 35vh;
+    display: inline-flexbox;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #444141d3;
+    background-size: cover;
+    background-image: url(https://www.icmif.org/sites/default/files/styles/inline_left/public/Ross%20Dawson%20news.jpg?itok=b_xYKzNZ);
+    color: #e68625;
+    background-blend-mode: multiply;
+    margin: 12px;
+    background-size: cover;
+    transition: 0.2s transform ease-in-out;
+  }
 
   /* Association styles  */
 
@@ -765,9 +832,24 @@ li span {
     padding: 0 1em;
   }
   .asso-card {
+    height: 110px;
+    width: 110px;
   }
 
   .team-card-wrapper {
     flex-direction: column;
+  }
+
+  /* Contact styles */
+  .contact-form {
+    padding: 0 0.5em;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .event-card {
+    padding: 0 2em;
   }
 }
