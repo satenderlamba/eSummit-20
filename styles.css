@@ -131,7 +131,7 @@ img {
   /* margin-bottom: 120px; */
   padding-top: 0;
   padding-bottom: 3em;
-  background: url(http://www.ecellnsut.com/images/blog/comingsoon.png);
+  
   background-size: cover;
 }
 /* .intro-section::after {
@@ -341,7 +341,7 @@ li span {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 5em;
-  padding: 0 9em;
+  padding: 0 6em;
 }
 .event-image-wrapper,
 .event-info {
@@ -655,6 +655,13 @@ li span {
 
 /* media queries */
 
+@media only screen and (max-width: 1040px) {
+  .event-card {
+    padding: 0 2em;
+  }
+}
+
+
 @media only screen and (max-width: 641px) {
   section {
     padding: 10px 20px;
@@ -749,7 +756,7 @@ li span {
   /* Event styles */
 
   .event-card {
-    padding: 0 0.5em;
+    padding: 0 0.8em ;
     flex-direction: column;
     justify-content: center;
     width: 43vw;
@@ -848,11 +855,5 @@ li span {
     padding: 0 0.5em;
     flex-direction: column;
     justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 1040px) {
-  .event-card {
-    padding: 0 2em;
   }
 }
