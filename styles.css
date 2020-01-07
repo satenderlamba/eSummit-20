@@ -121,17 +121,20 @@ img {
 .intro-section {
   font-family: Coves;
   display: flex;
-  background-color: #0e0e11;
+  /* background-color: #0e0e11; */
+
   max-height: 1080px;
   align-items: center;
   justify-content: space-between;
   font-size: 1.5em;
-  position: relative;
-  margin-bottom: 120px;
+
+  /* margin-bottom: 120px; */
   padding-top: 0;
   padding-bottom: 3em;
+  background: url(http://www.ecellnsut.com/images/blog/comingsoon.png);
+  background-size: cover;
 }
-.intro-section::after {
+/* .intro-section::after {
   content: "";
   position: absolute;
   bottom: -120px;
@@ -140,7 +143,7 @@ img {
   height: 120px;
   background: #0e0e11;
   clip-path: polygon(100% 0, 0 0, 100% 100%);
-}
+} */
 
 .intro-image-wrapper {
   background: url(https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -215,9 +218,10 @@ img {
   background-color: #f2f2f2;
   position: relative;
   margin-bottom: 120px;
+  text-align: center;
 }
 
-.about-us::before {
+/* .about-us::before {
   content: "";
   position: absolute;
   top: -120px;
@@ -226,7 +230,7 @@ img {
   height: 120px;
   background: #f2f2f2;
   clip-path: polygon(100% 100%, 0 0, 0 100%);
-}
+} */
 .about-us::after {
   content: "";
   position: absolute;
@@ -708,9 +712,9 @@ li span {
 
   /* Intro section styles */
 
-  .intro-section {
+  /* .intro-section {
     flex-direction: column;
-  }
+  } */
 
   .intro-text-wrapper {
     margin-bottom: 1em;
@@ -718,29 +722,28 @@ li span {
 
   .intro-text {
     font-size: 2em;
-    -ms-flex-order: 2;
   }
 
-  .intro-image-wrapper {
+  /* .intro-image-wrapper {
     -ms-flex-order: 1;
     height: 250px;
     width: 400px;
-  }
+  } */
 
   /* About us styles */
-  .about-us-wrapper {
+  /* .about-us-wrapper {
     flex-direction: column;
     flex: 1;
-  }
+  } */
 
-  .image-wrapper {
+  /* .image-wrapper {
     order: 2;
     margin: 0 auto;
     min-width: 300px;
     min-height: 250px;
-  }
+  } */
   .our-info-wrapper {
-    order: 1;
+    padding: 0 2em;
   }
 
   /* Event styles */
